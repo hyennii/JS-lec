@@ -1,12 +1,16 @@
 $(function(){
 
+	/*변수 및 요소 선언*/
 	var scrollBody = $('.motion_area'); 
-	var parallaxDistance = 210; 
+	var parallaxDistance = 110; //패럴럭스 요소가 움직이는 거리 조절
 
+	/*움직일 요소들*/
 	var bgContent = scrollBody.find('.bg'); 
 	var ggangBody = scrollBody.find('.motion_ggang'); 
 	var moonBody = scrollBody.find('.motion_moon'); 
+						//제이쿼리 find 메서드 이용해 scrollbody 아래의 bg element 찾아 변수에 담기
 
+	/*스크롤 할 때 변해야 할 값들*/
 	var scrollHeight; 
 	var scrollRealHeight; 
 	var winScrollTop; 
@@ -14,20 +18,21 @@ $(function(){
 	var moveDistance; 
 
 	function setProperty() { 
+			//스크롤한 값들을 세팅하는 함수
 
 		scrollHeight = scrollBody.height(); 
 		scrollRealHeight = (scrollHeight - $(window).height()); 
 		winScrollTop = $(window).scrollTop(); 
 		var scrollPerecnt = winScrollTop / scrollRealHeight; 
 		percent = scrollPerecnt * 100; 
-		moveDistance = scrollPerecnt * parallaxDistance; 
+		moveDistance = scrollPerecnt * parallaxDistance;  
 	};
 
 	function motionGgang() { 
 
 		setProperty(); 
 		changeBackgound(); 
-		parallaxMove(); 
+		parallaxMove(); //캐릭터의 패럴렉스 효과를 적용하는 함수
 	};
 
 	function changeBackgound() {
@@ -65,6 +70,12 @@ $(function(){
 		motionGgang();
 	});
 
-	init(); 
+	$(window).resize(function() { 
+			//화면사이즈가 변경될 때 실행되는 이벤트
+		motionGgang();
+	});
+
+	init();
 
 });
+</script>
