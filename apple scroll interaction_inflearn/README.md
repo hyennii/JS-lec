@@ -6,13 +6,14 @@
 ### transform-origin 
 - 시작되는 위치
 ex) transform-origin:199px 163px;
-                    //x축   //y축
+                <-- x축     y축 -->
 
-animation-name: key-frame이름
-animation-duration: //한번 재생 걸리는 시간
-animation-delay: //애니메이션 지연
-animation-direction: //애니메이션 재생방향 alternate:순방향, reserve:역방향
-animation-iteration-count: //애니메이션 재생횟수 infinite:무한
-animation-play-state: //애니메이션 재생여부 running:재생(기본값), paused:정지
-animation-timing-function: //애니메이션 가속도 설정 linear, ease, ease-in, ease-out, custom 등
-animation-fill-mode: both //
+### animation key-frame
+- animation-name: key-frame이름
+- animation-duration: <!-- 한번 재생 걸리는 시간 -->
+- animation-delay: <!-- 애니메이션 지연 -->
+- animation-direction: <!-- 애니메이션 재생방향 alternate:순방향, reserve:역방향 -->
+- animation-iteration-count: <!-- 애니메이션 재생횟수 infinite:무한 -->
+- animation-play-state: <!-- 애니메이션 재생여부 running:재생(기본값), paused:정지 -->
+- animation-timing-function: <!-- 애니메이션 가속도 설정 linear, ease, ease-in, ease-out, custom 등 -->
+- animation-fill-mode: both <!-- 애니메이션이 시작되기 전에 첫 번째 키프레임에서 설정한 스타일 값을 가져오고 애니메이션이 끝날 때 마지막 키프레임의 스타일 값을 유지 -->
