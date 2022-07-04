@@ -1,0 +1,58 @@
+
+$(function() {
+	var target = $('.sc_infinity .list');
+	var winTop; //스크롤 위치를 잡을 변수
+	var onTop; //문서 끝에 도착했는지 알수 있게 해주는 변수
+	var breakList = 10;
+	var listCount = 0;
+
+	$(window).scroll(function() {
+		listCall();
+	});
+	function getList() {
+		var list;
+
+		listCount++;
+
+		if(listCount > breakList){
+			list = null;
+		} else{
+			list = '<li><figure><img src="../images/1.jpg"></figure></li>';
+			list += '<li><figure><img src="../images/2.jpg"></figure></li>';
+			list += '<li><figure><img src="../images/3.jpg"></figure></li>';
+		}
+
+		return list;
+	}
+	function listCall() {
+		winTop = $(window).scrollTop();
+		onTop = $(document).height() - $(window).height() - $('.footer').height();
+					// 문서 전체 높이 값 - 스크린 높이 - 푸터 높이
+						// 푸터에 다다르기 전 로딩하기 위해
+
+		if(winTop >= onTop) {
+			var data = getList();
+
+			if(data !== null) {
+				target.append(data);
+				console.log('call data');
+			} else {
+				return false;
+			}
+		}
+	}
+
+	function init() {
+		listCall();
+	}
+
+	init(); //초기화
+});
+
+
+
+
+
+
+
+

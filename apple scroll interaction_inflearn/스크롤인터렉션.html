@@ -1,0 +1,51 @@
+
+$(function(){
+
+	var text = $('.progress .txt'); //퍼센트 값을 담을 element
+	var progressBar = $('.progress .bar'); //퍼센트 게이지 element
+
+	function getPercent() {
+
+		var scrollHeight = $('.sec01').height(); //스크롤 거리
+		var scrollRealHeight = (scrollHeight - $(window).height()); //스크롤 할 실제 거리
+		// 실제 스크롤 할 거리 = 스크롤 거리 - 화면높이
+		var winScrollTop = $(window).scrollTop(); //스크롤 위치
+		var scrollPercent = (winScrollTop / scrollRealHeight) * 100; //백분율 구하기
+		// 백분율 = (스크롤 위치 / 실제 스크롤할 거리) * 100
+		var textPercent = Math.round(scrollPercent); //소수점 반올림
+		console.log(scrollHeight);
+
+		render(textPercent,scrollPercent);
+	};
+
+	function render(textPercent,scrollPercent) {
+		text.text(textPercent + '%'); //텍스트 값
+
+		progressBar.css({ //게이지 값
+			width : scrollPercent + '%'
+		});
+	};
+
+	function init() { //초기화 시키는 함수
+		getPercent();
+	};
+
+	$(window).scroll(function() { 
+
+		getPercent();
+	});
+
+	init(); //초기화
+});
+
+
+
+
+
+
+
+
+
+
+
+
