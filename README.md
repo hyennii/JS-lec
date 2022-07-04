@@ -1,4 +1,4 @@
-# :hatching_chick: study
+# :cloud: study
 
 <br>
 
