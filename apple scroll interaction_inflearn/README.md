@@ -1,8 +1,10 @@
 ## [초보자도 만들 수 있는 애플 스크롤 인터렉션](https://www.inflearn.com/course/%EC%95%A0%ED%94%8C-%EC%8A%A4%ED%81%AC%EB%A1%A4-%EC%9D%B8%ED%84%B0%EB%A0%89%EC%85%98-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8#curriculum)
 
-calc속성 : ()안의 값을 계산해주는 css 속성
+### calc속성
+- ()안의 값을 계산해주는 css속성
 
-transform-origin : 시작되는 위치
+### transform-origin 
+- 시작되는 위치
 ex) transform-origin:199px 163px;
                     //x축   //y축
 
