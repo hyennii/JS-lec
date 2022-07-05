@@ -2,6 +2,8 @@
 
 ### calc속성
 - ()안의 값을 계산해주는 css속성
+- element를 %로 잡은 후 몇 px만큼 위치조정 할 때 유용 
+ex) top:calc(100% - 10px);
 
 ### transform-origin 
 - 시작되는 위치
