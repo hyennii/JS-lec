@@ -13,6 +13,7 @@
         var textPercent = Math.round(scrollPercent); <!-- 반올림 -->
     }
 }
+```
 
 - Math.round(); : 반올림
 - Math.floor(); : 내림
@@ -41,3 +42,4 @@ ex) transform-origin:199px 163px;
     animation-timing-function: <!-- 애니메이션 가속도 설정 linear, ease, ease-in, ease-out, custom 등 -->
     animation-fill-mode: both <!-- 애니메이션이 시작되기 전에 첫 번째 키프레임에서 설정한 스타일 값을 가져오고 애니메이션이 끝날 때 마지막 키프레임의 스타일 값을 유지 -->
 }
+```
