@@ -2,8 +2,8 @@
 
 ### 스크롤 함수
 
-```html
-{
+```javaScript
+
     function getPercent(){
         var scrollHeight = $().height(); <!-- 스크롤 거리 -->
         var scrollRealHeight = (scrollHeight - $(window).height()); <!-- 스크롤 할 실제 거리 -->
@@ -12,7 +12,7 @@
         var scrollPercent = (winScrollTop / scrollRealHeight) * 100; <!-- 백분율 구하기 -->
         var textPercent = Math.round(scrollPercent); <!-- 반올림 -->
     }
-}
+
 ```
 
 - Math.round(); : 반올림
@@ -31,8 +31,8 @@ ex) transform-origin:199px 163px;
 
 ### animation key-frame
 
-```html
-{
+```git
+
     animation-name: key-frame이름
     animation-duration: <!-- 한번 재생 걸리는 시간 -->
     animation-delay: <!-- 애니메이션 지연 -->
@@ -41,5 +41,5 @@ ex) transform-origin:199px 163px;
     animation-play-state: <!-- 애니메이션 재생여부 running:재생(기본값), paused:정지 -->
     animation-timing-function: <!-- 애니메이션 가속도 설정 linear, ease, ease-in, ease-out, custom 등 -->
     animation-fill-mode: both <!-- 애니메이션이 시작되기 전에 첫 번째 키프레임에서 설정한 스타일 값을 가져오고 애니메이션이 끝날 때 마지막 키프레임의 스타일 값을 유지 -->
-}
+
 ```
