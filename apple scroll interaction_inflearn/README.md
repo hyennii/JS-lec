@@ -57,7 +57,7 @@ ex) transform-origin:199px 163px;
 - 애니메이션 관련 메서드 사용할 때 사용. 연속으로 호출될 경우 대기중인 애니메이션 생기게 되는데, 이를 제거하기 위해 사용.
 
 ### 스크롤의 위치가 패럴럭스 섹션에 도착했는지 체크
-- parallaxThisTop 변수 선언 -> parallaxThisTop = winScrollTop - parallaxOffsetTop; 
+- parallaxThisTop 변수 선언 --> parallaxThisTop = winScrollTop - parallaxOffsetTop; 
 
 ```javaScript
 function setProperty(){
