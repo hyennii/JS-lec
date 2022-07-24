@@ -138,3 +138,18 @@ $.each(arr, function(index, value) {
     console.log(index + ':값 = ' + value);     
     });
 ```
+
+-2.맵 사용
+```javaScript
+var map = { 
+    'name': 'hh',
+    'age': '99'
+}; 
+$.each(map, function(key, value) {
+    console.log(key + ': ' + value); 
+}); 
+// 결과
+name: hh
+aage: 99
+```
+
