@@ -118,6 +118,6 @@
 		transform: translateY(0px);
 	}
 	100% {
-		transform: translateY(-4800px); /* 높이 x 롤링될 개수로 구한값 */
+		transform: translateY(-4800px); /* 높이(200) x 롤링될 개수(24)로 구한값 */
 	}
 } 
