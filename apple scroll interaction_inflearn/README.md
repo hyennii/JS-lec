@@ -139,7 +139,7 @@ $.each(arr, function(index, value) {
     });
 ```
 
--2.맵 사용
+- 2.맵 사용
 ```javaScript
 var map = { 
     'name': 'hh',
