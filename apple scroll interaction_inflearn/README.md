@@ -101,3 +101,22 @@ function motionParallax(){
 <br>
 
 ### date
+- date.getFullYear() : 년도 출력
+- date.getMonth() : 월 출력. 0부터 출력하므로 1월부터 나오기 위해 + 1 추가
+- date.getDate() : 일 출력
+
+<br>
+
+### string()
+- 숫자를 문자열로 변환하는 함수
+- .split과 자주 사용됨
+
+<br>
+
+### text-stroke (css)
+- text 외곽선 표현 (webkit기반에서만 동작)
+
+<br>
+
+### 이미지 마스크효과 만들기
+- 해당 이미지에 가상요소 after 올려두고 transition 사용
