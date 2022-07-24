@@ -120,3 +120,8 @@ function motionParallax(){
 
 ### 이미지 마스크효과 만들기
 - 해당 이미지에 가상요소 after 올려두고 transition 사용
+
+<br>
+
+### 제이쿼리에서 foreach문 사용
+- 1.배열사용 
