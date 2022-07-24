@@ -84,8 +84,26 @@
                         height: 200px; 
                         opacity: 0; 
                         transition:opacity .5s 1s;
+			    
+			.count_box { 
+				float: left;  
+				animation: count_date 2.8s 1 ease-out both paused;
+				
+				span {
+					display:block; 
+					height:200px; 
+					color:#fff; 
+					font-size:200px; 
+					line-height: 1; 
+					text-align: center; 
+					-webkit-text-fill-color:transparent; 
+					-webkit-text-stroke:6px #fff;
+				}
+				&.active { 
+					animation-play-state: running;
+				}
+			    }
                     }
-
                 }
             }
         } 
@@ -108,10 +126,6 @@
         }
     }
 }
-
-.section_today .date_box .date_count .count_box { float: left;  animation: count_date 2.8s 1 ease-out both paused;}
-.section_today .date_box .date_count .count_box.active { animation-play-state: running;}
-.section_today .date_box .date_count .count_box span {display:block; height:200px; color:#fff; font-size:200px; line-height: 1; text-align: center; -webkit-text-fill-color:transparent; -webkit-text-stroke:6px #fff;}
 
 @keyframes count_date {
 	0%{
