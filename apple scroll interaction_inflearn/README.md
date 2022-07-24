@@ -125,3 +125,16 @@ function motionParallax(){
 
 ### 제이쿼리에서 foreach문 사용
 - 1.배열사용 
+```javaScript
+// 예제1
+$.each([0,8,4,10], function(index, value) { 
+    console.log(index + ':값 = ' + value);
+    }); 
+    
+//예제2
+var arr = [0,8,4,10]; 
+
+$.each(arr, function(index, value) {
+    console.log(index + ':값 = ' + value);     
+    });
+```
