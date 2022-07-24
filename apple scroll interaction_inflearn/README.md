@@ -19,15 +19,21 @@
 - Math.floor(); : 내림
 - Math.ceil(); : 올림
 
+<br>
+
 ### calc속성
 - ()안의 값을 계산해주는 css속성
 - element를 %로 잡은 후 몇 px만큼 위치조정 할 때 유용 
 ex) top:calc(100% - 10px);
 
+<br>
+
 ### transform-origin 
 - 시작되는 위치
 ex) transform-origin:199px 163px;
                 <-- x축     y축 -->
+
+<br>
 
 ### animation key-frame
 
@@ -44,17 +50,27 @@ ex) transform-origin:199px 163px;
 
 ```
 
+<br>
+
 ### 이미지 scale 떨림현상 (IE11)
 - IE11에서 사용시, 이미지 확대되면서 떨리는 현상 생김 -> scale과 rotate 요소 같이 적용하면 해결됨 ex) -webkit-transform:scale(1.2) rotate(-0.01deg); //0.01deg는 육안으로 회전하는 효과 구분 어려움
+
+<br>
 
 ### offset()
 - 제이쿼리메서드. element의 왼쪽, 위쪽 위치 가져올 때 사용함
 
+<br>
+
 ### 스크롤 위로 올렸을 때 내려오는 animate가 바로 실행되어 안올라가고 스크롤이 다시 내려오는 문제
 - 아래로 내려오는 animate가 실행되면 특정 엘리먼트에 클래스를 활용해 애니메이트가 실행됬는지 체크 -> 위로 올라가는 애니메이션 만들기
 
+<br>
+
 ### stop()
 - 애니메이션 관련 메서드 사용할 때 사용. 연속으로 호출될 경우 대기중인 애니메이션 생기게 되는데, 이를 제거하기 위해 사용.
+
+<br>
 
 ### 스크롤의 위치가 패럴럭스 섹션에 도착했는지 체크
 - parallaxThisTop 변수 선언 --> parallaxThisTop = winScrollTop - parallaxOffsetTop; 
@@ -65,9 +81,13 @@ function setProperty(){
 }
 ```
 
+<br>
+
 ### Math.min, Math.max
 - Math.min : 주어진 숫자들 중 가장 작은 값 반환
 - Math.max : 입력값으로 받은 0개 이상의 숫자 중 가장 큰 숫자 반환
+
+<br>
 
 ### 스크롤 시, 특정 엘리먼트 이동 
 ```javaScript
@@ -77,3 +97,7 @@ function motionParallax(){
     });
 }
 ```
+
+<br>
+
+### date
