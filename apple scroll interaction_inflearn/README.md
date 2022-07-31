@@ -153,3 +153,24 @@ name: hh
 aage: 99
 ```
 
+<br>
+
+### $.fn ?
+- jQuery 메소드의 종류에는 크게 2가지가 있다.
+- $ 네임스페이스의 메소드는 주로 utility 타입메소드로 정적메소드 처럼 쓰임
+ex) $.each()
+- $.fn 네임스페이스의 메소드는 selector와 함께 쓰이는 메소드임
+ex)$().each()
+- 확장 또는 플러그인 이라고 하는 것은 결국 selector와 함께 쓰일 수 있도록 $.fn 네임스페이스에 메소드를 추가하는 것이라고 볼 수 있음
+
+<br>
+
+### 익명함수 ?
+- (https://velog.io/@blackb0x/%EC%9D%B5%EB%AA%85%ED%95%A8%EC%88%98Anonymous-function)
+- https://dasima.xyz/javascript-anonymous-function/
+
+<br>
+
+### 브라우저 버그
+1) animation paused -> 단독으로 사용
+2) animation keyframes -> translateX를 margin-left로 바꿔 작성
