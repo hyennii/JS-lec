@@ -174,3 +174,9 @@ ex)$().each()
 ### 브라우저 버그
 1) animation paused -> 단독으로 사용
 2) animation keyframes -> translateX를 margin-left로 바꿔 작성
+
+<br>
+
+### sticky
+ - https://ux.stories.pe.kr/202
+ - overflow:hidden; 속성은 sticky 적용된 요소에 사용 (sticky 적용요소의 부모요소에 사용x)
