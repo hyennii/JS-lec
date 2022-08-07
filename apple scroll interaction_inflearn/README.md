@@ -185,6 +185,7 @@ ex)$().each()
 
 ### function(e)
  - 이벤트를 함수에 감쌈. 이는 이벤트가 실행되어야 할 때만 실행시키기 위함임
+ - https://intrepidgeeks.com/tutorial/problems-in-event-function-e
 
 <br>
 
