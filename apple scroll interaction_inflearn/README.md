@@ -180,3 +180,23 @@ ex)$().each()
 ### sticky
  - https://ux.stories.pe.kr/202
  - overflow:hidden; 속성은 sticky 적용된 요소에 사용 (sticky 적용요소의 부모요소에 사용x)
+
+<br>
+
+### function(e)
+ - 이벤트를 함수에 감쌈. 이는 이벤트가 실행되어야 할 때만 실행시키기 위함임
+
+<br>
+
+### 모더나이저
+ - https://modernizr.com/
+ - 사용자의 브라우저가 현재 가지고 있는 HTML5, CSS 기능들을 감지하고 지원여부를 판별하는 Javascript 라이브러리
+ - 속성 체크 후 우측 view example
+   1) css 내에서 no라는 접두사 붙었을 때 : 해당 속성 사용불가
+   2) 접두사 없을 때 : 해당 속성 사용가능
+   3) js에서도 true와 false로 사용 가능 여부 판단
+ - 사용법 : 필요한 코드 체크 후 build -> copy
+   1) 좌측 minify 미리 체크하여 코드 압축
+   2) 압축한 코드 복붙
+   3) 개발자도구에서 확인 시, html에도 해당 요소 들어가 있음 <- minify 아래의 add css classes 체크했기 때문
+   4) no 접두사 붙은 css 코드 변경
