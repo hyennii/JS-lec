@@ -201,3 +201,18 @@ ex)$().each()
    2) 압축한 코드 복붙
    3) 개발자도구에서 확인 시, html에도 해당 요소 들어가 있음 <- minify 아래의 add css classes 체크했기 때문
    4) no 접두사 붙은 css 코드 변경
+   
+<br>
+
+### canvas 요소
+ - width와 height 두 속성만 존재
+ ```html
+<canvas id="test" width="150" height="150"></canvas>
+```
+ - <canvas> 요소는 고정된 크기의 드로잉 영역을 생성하며, 그 영역은 보여질 컨텐츠를 생성하고 다루게될 두가지 이상의 렌더링 컨텍스트를 노출시킴(2D, 3D)
+ - 참고 : https://cornswrold.tistory.com/112
+ 
+<br>
+
+### toFixed
+ - Number 인스턴스의 소수 부분 자릿수를 전달받은 값으로 고정한 후, 그 값을 문자열로 반환
