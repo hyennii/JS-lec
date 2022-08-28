@@ -216,3 +216,64 @@ ex)$().each()
 
 ### toFixed
  - Number 인스턴스의 소수 부분 자릿수를 전달받은 값으로 고정한 후, 그 값을 문자열로 반환
+ 
+<br>
+
+### transform-style:preserve-3d; 
+ - 요소의 자식이 3d 공간에 배치
+ 
+<br>
+
+### perspective
+ - 원근감
+ 
+<br>
+
+### 정육면체 활용
+ - translateZ 값은 육면체의 크기에 따라 변하므로 육면체 넓이 / 2 해주기
+ 
+ ```css
+.cube_wrap .cube_box .cube_face.front {transform: rotateY(0deg) translateZ(200px);}
+.cube_wrap .cube_box .cube_face.back {transform: rotateY(180deg) translateZ(200px);}
+
+.cube_wrap .cube_box .cube_face.left {transform: rotateY(-90deg) translateZ(200px);}
+.cube_wrap .cube_box .cube_face.right {transform: rotateY(90deg) translateZ(200px);}
+
+.cube_wrap .cube_box .cube_face.top {transform: rotateX(90deg) translateZ(200px);}
+.cube_wrap .cube_box .cube_face.bottom {transform: rotateX(-90deg) translateZ(200px);}
+```
+
+```html
+<div class="wrap">
+	<div class="cube_wrap"> 
+		<div class="cube_box">
+			<div class="cube_face front"></div>
+			<div class="cube_face back"></div>
+			<div class="cube_face right"></div>
+			<div class="cube_face left"></div>
+			<div class="cube_face top"></div>
+			<div class="cube_face bottom"></div>
+		</div>
+	</div>
+</div>
+```
+
+```javaScript
+	function parallax() {
+
+		var scrollHeight = $(document).height();
+		var scrollRealHeight = scrollHeight - $(window).height();
+		var scrollPerecnt = winScrollTop / scrollRealHeight;
+		var parallaxDistance = 1100;
+		var moveDistance = scrollPerecnt * parallaxDistance;
+
+		$('.cube_box').css({
+			transform : 'rotateY('+ moveDistance +'deg) rotateX('+ moveDistance +'deg)'
+		});
+	};
+```
+ - translateZ : front, back에서는 left 넓이의 /2<br>
+             left, right에서는 front 넓이의 /2<br>
+             top, bottom에서는 front 높이의 /2<br>
+             * 직육면체에서는 left, right에 left값 더해줌. left의 translateZ-(width/2)<br>
+             * 직육면체에서는 top, bottom에 top값 더해줌. top의 translateZ-(height/2)
