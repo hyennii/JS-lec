@@ -34,3 +34,5 @@ ctx.strokeRect(300,300,50,100);  // 해당 ctx 전에 미리 css 설정
  `````JavaScript
  ctx.arc(260, 80, 8, 0, 2 * Math.PI);
  `````
+ 
+ ![arc 설명그림](https://webisfree.com/static/uploads/2018/2066_arc_angle.jpg)
