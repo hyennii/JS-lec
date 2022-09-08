@@ -59,3 +59,26 @@
    ```
    3) object 안의 무언가를 업데이트하는 것은 아무문제 없음 (object 안에 추가하는 것도 가능)
    
+   ## Nan 
+   - Not a number
+    
+   ## Functions
+   ```javascript
+    function plus(firstNumber, secondNumber){
+         console.log(firstNumber + secondNumber);
+    }
+    plus(8, 60);
+   ```
+    
+  1) 각 변수에 맞는 데이터 순서 중요
+    
+   ```javascript
+    const player = {
+         name:"hyewon",
+         sayHello:function(otherPersonsName){
+              console.log("hello " + otherPersonsName + " nice to meet you!");
+         },
+    };
+    player.sayHello("nico"); //실행
+   ```
+   
