@@ -38,13 +38,19 @@
    daysOfWeek.push("sun");
    ```
    
-   5) 아이템 업데이트 가능
+   5) item 업데이트 가능
    ```javascript
    const toBuy = ["potato", "tomato", "pizza"];
    
    console.log(toBuy[2]);  //pizza 출력
    toBuy[2] = "water";  //기존 pizza 자리에 water로 업데이트
    console.log(toBuy[2]);  //water 출력
+   ```
+   
+   6) push = array 끝에 item 하나 추가
+   ```javascript
+   toBuy.push("meat");
+   console.log(toBuy);
    ```
    
   ## objects
@@ -89,7 +95,6 @@
    ```
     
   1) 각 변수에 맞는 데이터 순서 중요
-    
    ```javascript
     const player = {
          name:"hyewon",
@@ -99,6 +104,17 @@
     };
     player.sayHello("nico"); //실행
    ```
+   
+   2) array처럼 업데이트 가능
+    ```javascript
+    const player = {
+          name:"hyewon",
+          age:27,
+    };
+    
+    console.log(player.name);   // hyewon 출력
+    console.log((player.name = "hyennii"));   // hyennii 출력
+    ```
    
    ## let
    1) constant와 동일하지만, let은 업데이트 가능
