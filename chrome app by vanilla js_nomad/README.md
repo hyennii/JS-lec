@@ -12,12 +12,14 @@
   ```javascript
   const amIWrong = null;  //amIWrong이라는 variable에 아무것도 없는 상태로 채움
   ```
+  4) undefined와 다름
   
   ## undefined
    1) variable은 존재하나, 값은 없음(정의되지 않음)
    ```javascript
    let something;
    ```
+   2) null과 다름
    
    ## array
    1) [   ] 기호 사용
@@ -53,7 +55,7 @@
    player.small = false; //constant 수정 불가 -> object 안의 무언가를 수정
    console.log(player); 
    ```
-   2) constant를 수정하면 에러 발생
+   2) constant를 수정하면 에러 발생 -> let 사용(하단에 따로 정리)
    ```javascript
    player = false; //에러 발생
    ```
@@ -61,6 +63,10 @@
    
    ## Nan 
    - Not a number
+   
+   ## boolean
+   1) true와 false
+   2) 무한으로 작성할 수 있는 숫자나 문자와 다름
     
    ## Functions
    ```javascript
@@ -81,4 +87,15 @@
     };
     player.sayHello("nico"); //실행
    ```
+   
+   ## let
+   1) constant와 동일하지만, let은 업데이트 가능
+   2) variable을 업데이트하기 위해 let 사용
+   ```javascript
+   let isAnnTall = false;
+   
+   isAnnTall = true;
+   ```
+   3) 항상 const를 사용하고 let은 가끔씩 사용하기
+   4) var 사용금지 (const나 let과 함께 사용불가)
    
