@@ -122,7 +122,7 @@
    
    ```javascript
    function plus(a, b){   //a와 b는 data를 받으면 대체되는 place holder
-      console.log(a + b);
+      console.log(a + b);   //a와 b는 function 밖에서는 정의되지 않음(에러 발생)
    }
    plus(5, 10);   //원하는 data 추출
    ```
