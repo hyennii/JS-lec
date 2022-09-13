@@ -84,7 +84,7 @@
    2) 무한으로 작성할 수 있는 숫자나 문자와 다름
    
    ## string
-    - 문자를 의미
+   - 문자를 의미
     
    ## Functions
    ```javascript
@@ -105,15 +105,17 @@
     player.sayHello("nico"); //실행
    ```
    
-   2) array처럼 업데이트 가능
+  2) array처럼 업데이트 가능
+   
     ```javascript
-    const player = {
-          name:"hyewon",
-          age:27,
-    };
-    
-    console.log(player.name);   // hyewon 출력
-    console.log((player.name = "hyennii"));   // hyennii 출력
+     const player = {
+           name:"hyewon",
+           age:27,
+     };
+
+     console.log(player.name);   //hyewon 출력
+     
+     console.log((player.name = "hyennii"));   //hyennii 출력
     ```
    
    ## let
