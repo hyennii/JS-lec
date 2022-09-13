@@ -118,6 +118,15 @@
     console.log((player.name = "hyennii"));   //hyennii 출력
    ```
    
+   3) function 밖에서 data 받는 방법
+   
+   ```javascript
+   function plus(a, b){   //a와 b는 data를 받으면 대체되는 place holder
+      console.log(a + b);
+   }
+   plus(5, 10);   //원하는 data 추출
+   ```
+   
    ## let
    1) constant와 동일하지만, let은 업데이트 가능
    2) variable을 업데이트하기 위해 let 사용
@@ -129,3 +138,5 @@
    3) 항상 const를 사용하고 let은 가끔씩 사용하기
    4) var 사용금지 (const나 let과 함께 사용불가)
    
+   ## ()
+   - 실행한다는 뜻
