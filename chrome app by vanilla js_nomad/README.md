@@ -38,6 +38,15 @@
    daysOfWeek.push("sun");
    ```
    
+   5) 아이템 업데이트 가능
+   ```javascript
+   const toBuy = ["potato", "tomato", "pizza"];
+   
+   console.log(toBuy[2]);  //pizza 출력
+   toBuy[2] = "water";  //기존 pizza 자리에 water로 업데이트
+   console.log(toBuy[2]);  //water 출력
+   ```
+   
   ## objects
    1) console은 object이며, 그 안의 어딘가에 log가 있다는 것
    ```javascript
@@ -67,6 +76,9 @@
    ## boolean
    1) true와 false
    2) 무한으로 작성할 수 있는 숫자나 문자와 다름
+   
+   ## string
+    - 문자를 의미
     
    ## Functions
    ```javascript
