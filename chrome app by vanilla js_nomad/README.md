@@ -107,16 +107,16 @@
    
   2) array처럼 업데이트 가능
    
-    ```javascript
-     const player = {
-           name:"hyewon",
-           age:27,
-     };
+   ```javascript
+    const player = {
+          name:"hyewon",
+          age:27,
+    };
 
-     console.log(player.name);   //hyewon 출력
-     
-     console.log((player.name = "hyennii"));   //hyennii 출력
-    ```
+    console.log(player.name);   //hyewon 출력
+
+    console.log((player.name = "hyennii"));   //hyennii 출력
+   ```
    
    ## let
    1) constant와 동일하지만, let은 업데이트 가능
