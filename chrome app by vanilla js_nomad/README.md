@@ -140,3 +140,7 @@
    
    ## ()
    - 실행한다는 뜻
+   
+   ## return;
+   - return 하는 순간 해당 function이 끝나기 때문에 <br>
+      그 후에 적은 console 등 아무것도 작동 안함
