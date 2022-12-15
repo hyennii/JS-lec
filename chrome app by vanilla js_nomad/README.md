@@ -144,3 +144,14 @@
    ## return;
    - return 하는 순간 해당 function이 끝나기 때문에 <br>
       그 후에 적은 console 등 아무것도 작동 안함
+      
+   ## Console.dir()
+   1)element를 console.log보다 자세하게 보여줌
+
+   ```html
+   <h1 id="title">Grab me!</h1>
+   ```
+   ```javaScript
+   const title = document.getElementById("title");
+   console.dir(title);  //h1#title <--- 콘솔에 나타남
+   ```
