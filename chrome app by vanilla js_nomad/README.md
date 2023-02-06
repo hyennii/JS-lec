@@ -12,11 +12,11 @@
 - [Functions](https://github.com/hyennii/study/blob/main/chrome%20app%20by%20vanilla%20js_nomad/%EC%A0%95%EB%A6%AC.md#functions)
 - [let](https://github.com/hyennii/study/blob/main/chrome%20app%20by%20vanilla%20js_nomad/%EC%A0%95%EB%A6%AC.md#let)
 - [()](https://github.com/hyennii/study/blob/main/chrome%20app%20by%20vanilla%20js_nomad/%EC%A0%95%EB%A6%AC.md#())
-- [return;](https://github.com/hyennii/study/blob/main/chrome%20app%20by%20vanilla%20js_nomad/%EC%A0%95%EB%A6%AC.md#return;)
-- [Console.dir()](https://github.com/hyennii/study/blob/main/chrome%20app%20by%20vanilla%20js_nomad/%EC%A0%95%EB%A6%AC.md#console.dir())
+- [return;](https://github.com/hyennii/study/blob/main/chrome%20app%20by%20vanilla%20js_nomad/%EC%A0%95%EB%A6%AC.md#return)
+- [Console.dir()](https://github.com/hyennii/study/blob/main/chrome%20app%20by%20vanilla%20js_nomad/%EC%A0%95%EB%A6%AC.md#consoledir)
 - [prompt](https://github.com/hyennii/study/blob/main/chrome%20app%20by%20vanilla%20js_nomad/%EC%A0%95%EB%A6%AC.md#prompt)
 - [typeof](https://github.com/hyennii/study/blob/main/chrome%20app%20by%20vanilla%20js_nomad/%EC%A0%95%EB%A6%AC.md#typeof)
-- [isNaN](https://github.com/hyennii/study/blob/main/chrome%20app%20by%20vanilla%20js_nomad/%EC%A0%95%EB%A6%AC.md#isNaN)
+- [isNaN](https://github.com/hyennii/study/blob/main/chrome%20app%20by%20vanilla%20js_nomad/%EC%A0%95%EB%A6%AC.md#isnan)
 
 ### 02
 - [if문](https://github.com/hyennii/study/blob/main/chrome%20app%20by%20vanilla%20js_nomad/%EC%A0%95%EB%A6%AC.md#if문)
