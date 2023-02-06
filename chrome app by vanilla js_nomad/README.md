@@ -11,7 +11,7 @@
 - [string](https://github.com/hyennii/study/blob/main/chrome%20app%20by%20vanilla%20js_nomad/%EC%A0%95%EB%A6%AC.md#string)
 - [Functions](https://github.com/hyennii/study/blob/main/chrome%20app%20by%20vanilla%20js_nomad/%EC%A0%95%EB%A6%AC.md#functions)
 - [let](https://github.com/hyennii/study/blob/main/chrome%20app%20by%20vanilla%20js_nomad/%EC%A0%95%EB%A6%AC.md#let)
-- [()](https://github.com/hyennii/study/blob/main/chrome%20app%20by%20vanilla%20js_nomad/%EC%A0%95%EB%A6%AC.md#())
+- [()](https://github.com/hyennii/study/blob/main/chrome%20app%20by%20vanilla%20js_nomad/%EC%A0%95%EB%A6%AC.md#)
 - [return;](https://github.com/hyennii/study/blob/main/chrome%20app%20by%20vanilla%20js_nomad/%EC%A0%95%EB%A6%AC.md#return)
 - [Console.dir()](https://github.com/hyennii/study/blob/main/chrome%20app%20by%20vanilla%20js_nomad/%EC%A0%95%EB%A6%AC.md#consoledir)
 - [prompt](https://github.com/hyennii/study/blob/main/chrome%20app%20by%20vanilla%20js_nomad/%EC%A0%95%EB%A6%AC.md#prompt)
