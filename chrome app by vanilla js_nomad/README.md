@@ -21,3 +21,5 @@
 ### 02
 - [if문](https://github.com/hyennii/study/blob/main/chrome%20app%20by%20vanilla%20js_nomad/%EC%A0%95%EB%A6%AC.md#if문)
 - [javaScript로 특정 태그 가져오기](https://github.com/hyennii/study/blob/main/chrome%20app%20by%20vanilla%20js_nomad/%EC%A0%95%EB%A6%AC.md#javaScript로-특정-태그-가져오기)
+- [h1의 style을 js에서 변경하기](https://github.com/hyennii/study/blob/main/chrome%20app%20by%20vanilla%20js_nomad/%EC%A0%95%EB%A6%AC.md#h1의-style을-js에서-변경하기)
+- [event를 listen 하는 방법](https://github.com/hyennii/study/blob/main/chrome%20app%20by%20vanilla%20js_nomad/%EC%A0%95%EB%A6%AC.md#event를-listen-하는-방법)
