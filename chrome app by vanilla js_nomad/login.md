@@ -59,8 +59,33 @@ function onLoginBtnClick(){
 <a href="https://nomadcoders.co">Go to courses</a>
 ```
 
-2.js
+2. js
 ```javaScript
 const link = document.querySelector("a");   //링크 찾기
+
+function handleLinkClick(event) {
+  event.preventDefault();   //랜딩 막힘
+  console.log(event);   //클릭한 위치값 x,y 출력
+}
+
+link.addEventListener("click", handleLinkClick);
+```
+- event.preventDefault() : (a태그로 인해 랜딩되는) 기본 동작을 막음(= event 멈춤)
+
+### form 숨기기
+
+1. css
+```css
+.hidden {
+  display: none;
+}
 ```
 
+2. js
+```javaScript
+function onLoginSubmit(event) {
+  event.preventDefault();
+  const username = loginInput.value;
+  loginForm.classList.add("hidden");      //hidden class명 추가
+}
+```
