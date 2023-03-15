@@ -116,3 +116,9 @@ function onLoginSubmit(event) {
 loginForm.addEventListener("submit", onLoginSubmit);
 ```
 
+* 참고 - 다음 두 줄은 동일한 동작을 수행함
+```javascript
+"Hello" + username;
+`Hello ${username}`;       
+```
+
