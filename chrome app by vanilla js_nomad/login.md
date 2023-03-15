@@ -51,3 +51,16 @@ function onLoginBtnClick(){
       <button>Log In</button>
     </form>
 ```
+
+### 다른페이지 랜딩 막기
+
+1. html
+```html
+<a href="https://nomadcoders.co">Go to courses</a>
+```
+
+2.js
+```javaScript
+const link = document.querySelector("a");   //링크 찾기
+```
+
