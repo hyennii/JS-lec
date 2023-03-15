@@ -72,7 +72,7 @@ link.addEventListener("click", handleLinkClick);
 ```
 - event.preventDefault() : (a태그로 인해 랜딩되는) 기본 동작을 막음(= event 멈춤)
 
-### form 숨기기
+### form 숨기고 h1 노출
 
 1. css
 ```css
@@ -81,7 +81,17 @@ link.addEventListener("click", handleLinkClick);
 }
 ```
 
-2. js
+2. html
+```html
+<form id="login-form">
+  <input type="text" placeholder="What's your name?" />
+  <button>Log In</button>
+</form>
+<h1 id="greeting" class="hidden"></h1>
+```
+
+3. js
+* ex)1
 ```javaScript
 function onLoginSubmit(event) {
   event.preventDefault();
@@ -89,3 +99,20 @@ function onLoginSubmit(event) {
   loginForm.classList.add("hidden");      //hidden class명 추가
 }
 ```
+
+* ex)2
+```javaScript
+const greeting = document.querySelector("#greeting");   //greeting 찾기
+const HIDDEN_CLASSNAME = "hidden";      //일반적으로 string만 포함된 변수는 대문자로 표기
+
+function onLoginSubmit(event) {
+  event.preventDefault();
+  loginForm.classList.add(HIDDEN_CLASSNAME);
+  const username = loginInput.value;
+  greeting.innerText = "Hello" + username; //h1 안에 greeting에 있는 텍스트 추가
+  greeting.classList.remove(HIDDEN_CLASSNAME); //hidden class 제거
+}
+
+loginForm.addEventListener("submit", onLoginSubmit);
+```
+
