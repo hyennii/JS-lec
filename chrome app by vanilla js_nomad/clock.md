@@ -29,3 +29,24 @@
     getClock()  //페이지 로딩 되자마자 getClock 실행
     setInterval(getClock, 1000);
 ```
+<br>
+
+### padStart
+
+```javaScript
+function getClock(){
+    const date = new Date();
+
+    const hours = String(date.getHours()).padStart(2, "0");
+    const minutes = String(date.getMinutes()).padStart(2, "0");
+    const seconds = String(date.getSeconds()).padStart(2, "0");
+
+    clock.innerText = `${hours}:${minutes}:${seconds}`;
+}
+
+getClock()
+setInterval(getClock, 1000);
+```
+1. number이기 때문에 string으로 변환
+2. padStart(2, "0") : 길이가 2가 아닐 때 앞에 "0" 입력
+3. padEnd(2, "0") : 길이가 2가 아닐 때 뒤에 "0" 입력
