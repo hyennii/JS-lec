@@ -31,3 +31,4 @@
 
 ### 04
 - [setTimeout](https://github.com/hyennii/JS-lec/blob/main/chrome%20app%20by%20vanilla%20js_nomad/clock.md#settimeout)
+- [padStart](https://github.com/hyennii/JS-lec/blob/main/chrome%20app%20by%20vanilla%20js_nomad/clock.md#padstart)
