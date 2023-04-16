@@ -28,3 +28,6 @@
 - [로그인Form 만들기](https://github.com/hyennii/study/blob/main/chrome%20app%20by%20vanilla%20js_nomad/login.md#로그인-form-만들기)
 - [다른페이지 랜딩 막기](https://github.com/hyennii/JS-lec/blob/main/chrome%20app%20by%20vanilla%20js_nomad/login.md#%EB%8B%A4%EB%A5%B8%ED%8E%98%EC%9D%B4%EC%A7%80-%EB%9E%9C%EB%94%A9-%EB%A7%89%EA%B8%B0)
 - [form 숨기고 h1 노출](https://github.com/hyennii/JS-lec/blob/main/chrome%20app%20by%20vanilla%20js_nomad/login.md#form-%EC%88%A8%EA%B8%B0%EA%B3%A0-h1-%EB%85%B8%EC%B6%9C)
+
+### 04
+- [setTimeout](https://github.com/hyennii/JS-lec/blob/main/chrome%20app%20by%20vanilla%20js_nomad/clock.md#settimeout)
