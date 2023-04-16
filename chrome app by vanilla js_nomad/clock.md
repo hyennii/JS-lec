@@ -20,5 +20,6 @@
     console.log(`${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`) //벡틱 사용
     }
 
+    getClock()  //페이지 로딩 되자마자 getclock 실행
     setInterval(getClock, 1000);
 ```
