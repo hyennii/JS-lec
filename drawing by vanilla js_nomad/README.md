@@ -4,6 +4,7 @@
 ``````JavaScript
 const context = canvas.getContext("2d"); //캔버스에 그림 그릴 때 context 사용
 ``````
+- context : 줄여서 ctx로 사용
 
 ``````JavaScript
 //rect
