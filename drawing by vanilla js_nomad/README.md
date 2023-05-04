@@ -16,8 +16,8 @@ ctx.stroke(); //선
 ctx.beginPath(); //새 경로 
 
 //moveTo
-ctx.moveTo(x축 좌표값, y축 좌표값);
-ctx.lineTo(x축 좌표값, y축 좌표값); //선을 그을 곳
+ctx.moveTo(x축 좌표값, y축 좌표값); //선을 긋지 않으면서 꼭지점을 움직임
+ctx.lineTo(x축 좌표값, y축 좌표값); //선을 그으면서 다른부분으로 움직임
 ``````
 
  1) 좌표 0,0은 캔버스 좌측 상단 코너(0,0이 모든 시작점)
