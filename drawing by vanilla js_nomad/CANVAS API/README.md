@@ -26,8 +26,37 @@ ctx.lineTo(x축 좌표값, y축 좌표값); //선을 그으면서 다른부분�
 
 ``````JavaScript
 ctx.lineWidth = 2;
-ctx.strokeRect(300,300,50,100);  // 해당 ctx 전에 미리 css 설정
+ctx.strokeRect(300,300,50,100);  // 전에 미리 css 설정해야 적용됨(적용순서 유의)
 ``````
+
+### 집그리기
+
+<p>&lt;html&gt;</p>
+
+```html
+<canvas></canvas>
+```
+
+
+<p>&lt;js&gt;</p>
+
+```JavaScript
+const canvas = document.querySelector("canvas");
+
+const ctx = canvas.getContext("2d");
+canvas.width = 800;
+canvas.height = 800;
+
+ctx.fillRect(200, 200, 50, 200);
+ctx.fillRect(400, 200, 50, 200);
+ctx.lineWidth = 2;
+ctx.strokeRect(300, 300, 50, 100);
+ctx.fillRect(200, 200, 200, 20);
+ctx.moveTo(200, 200);
+ctx.lineTo(325, 100);
+ctx.lineTo(450, 200);
+ctx.fill();
+```
 
 ### 원그리기
  : ctx.arc(x축, y축, 반지름, startingangle, endingangle); <br>
