@@ -2,12 +2,16 @@
 
 ### form js로 가져오기
 
+-html-
+    
 ```html
 <form id="todo-form">
     <input type="text" placeholder="write a To Do and Press Enter" required>
 </form>
 <ul id="todo-list"></ul>
 ```
+
+-js-
 
 ```javaScript
 const toDoForm = document.getElementById("todo-form");
