@@ -28,3 +28,12 @@ function paintToDo(newTodo){
 ---------------------------------------------------------------------
 
 ## todo 삭제
+
+: x 이모지 들어간 button js로 생성
+
+- append 하기 전에 button 생성
+
+```javaScript
+const button = document.createElement("button");
+button.innerText = "❌";
+```
