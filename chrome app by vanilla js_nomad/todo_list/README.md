@@ -75,4 +75,42 @@ li.appendChild(button);
 
 ## todo 저장
 
+: localStorage에 저장
+
+    * localStorage에는 텍스트만 저장 가능
+
 1) array 만들고, newTodo가 생길때마다 해당 텍스트를 array에 push
+
+   ```javaScript
+        const toDos = [];
+   ```
+
+2) newTodo 생성되기 전에 array(toDos)에 newTodo를 push
+
+   ```javaScript
+        toDos.push(newTodo); 
+        paintToDo(newTodo);
+   ```
+
+3) localStorage 넣는 함수 추가 및 호출
+   
+   ```javaScript
+    function saveToDos(){
+        localStorage.setItem("todos", toDos)   //toDos array를 localStorage에 넣기
+    }
+
+   saveToDos();    //toDos array localStorage에 저장
+   ```
+
+- <h4> localStorage에 저장은 되지만 새로 고치면 화면에서 제거됨</h4>
+
+    1) localStorage에 텍스트가 아닌 array로 저장하기 위해 JSON.stringify 사용
+        - JSON.stringify : JS object나 array, 어떤 JS코드건 간에 string으로 바꿔줌
+
+    2) toDos를 stringify
+
+    ```javaScript
+    function saveToDos(){
+        localStorage.setItem("todos", JSON.stringify(toDos));  
+    }
+    ```
