@@ -2,11 +2,20 @@ const toDoForm = document.getElementById("todo-form");
 const toDoInput = document.querySelector("#todo-form input");
 const toDoList = document.getElementById("todo-list");
 
+function deleteToDo(event){
+    const li = (event.target.parentElement);    //삭제할 button의 부모 li 찾기
+    li.remove();
+}
+
 function paintToDo(newTodo){
     const li = document.createElement("li");
     const span = document.createElement("span");
-    li.appendChild(span);   //li 안에 span태그 넣기
     span.innerText = newTodo;
+    const button = document.createElement("button");
+    button.innerText = "❌";
+    button.addEventListener("click", deleteToDo)    //클릭되었는지 확인을 위해 eventListener 사용
+    li.appendChild(span);   //li 안에 span태그 넣기
+    li.appendChild(button);     //li 안에 button 추가
     toDoList.appendChild(li);
 }
 
