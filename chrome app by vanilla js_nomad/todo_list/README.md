@@ -102,15 +102,29 @@ li.appendChild(button);
    saveToDos();    //toDos array localStorage에 저장
    ```
 
-- <h4> localStorage에 저장은 되지만 새로 고치면 화면에서 제거됨</h4>
+*<h4> localStorage에 저장은 되지만 새로 고치면 화면에서 제거됨</h4>*
+*<h4>이를 해결하려면?</h4>*
 
-    1) localStorage에 텍스트가 아닌 array로 저장하기 위해 JSON.stringify 사용
-        - JSON.stringify : JS object나 array, 어떤 JS코드건 간에 string으로 바꿔줌
+1) localStorage에 텍스트가 아닌 array로 저장하기 위해 JSON.stringify 사용
+    - JSON.stringify : JS object나 array, 어떤 JS코드건 간에 string으로 바꿔줌
 
-    2) toDos를 stringify
+2) toDos를 stringify
 
-    ```javaScript
-    function saveToDos(){
-        localStorage.setItem("todos", JSON.stringify(toDos));  
-    }
-    ```
+```javaScript
+function saveToDos(){
+    localStorage.setItem("todos", JSON.stringify(toDos));  
+}
+```
+
+        또는 JSON.parse 로 array를 string으로 바꿀 수 있음
+
+```javaScript
+JSON.parse("[1,2,3,4]")
+```
+
+3) localStorage에 있던걸 들고와서 이 string을 JSON.parse에 넣으면 실제로 무언가를 할 수 있는 배열을 얻음
+
+```javaScript
+    localStorage.getItem("todos")    //localStorage에 있는거 출력
+    JSON.parse(localStorage.getitem("todos"))    //배열 출력
+```
