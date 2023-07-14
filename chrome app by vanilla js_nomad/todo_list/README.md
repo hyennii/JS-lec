@@ -128,3 +128,23 @@ JSON.parse("[1,2,3,4]")
     localStorage.getItem("todos")    //localStorage에 있는거 출력
     JSON.parse(localStorage.getitem("todos"))    //배열 출력
 ```
+
+4) localStorage에 item 저장되어있는 갯수만큼 호출
+
+```javaScript
+const TODOS_KEY = "todos";
+
+function sayHello(){
+    console.log("this si the turn of", item);
+}
+
+toDoForm.addEventListener("submit", handleToDoSubmit);
+
+const savedToDos = localStorage.getItem(TODOS_KEY);
+console.log(savedToDos)
+if(savedToDos !== null){
+    const parsedToDos = JSON.parse(savedToDos);
+    parsedToDos.forEach((item) => console.log("this is the turn of", item));    //arrow function(화살표 함수)
+}
+
+```
