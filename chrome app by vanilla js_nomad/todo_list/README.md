@@ -148,3 +148,22 @@ if(savedToDos !== null){
 }
 
 ```
+
+5) localStorage에 저장된 item 노출
+
+```javaScript
+if (savedToDos !== null) {
+  const parsedToDos = JSON.parse(savedToDos);
+  parsedToDos.forEach(paintToDo);
+}
+```
+
+*<h4> todo 목록을 추가하면 새 item이 localstorage에 있던 기존 item을 덮음(기존 todo 사라짐) </h4>*
+*<h4>이를 해결하려면?</h4>*
+
+1) 이유
+
+```javaScript
+    const toDos = [];
+```
+    : application이 시작될때 toDos array는 항상 비어있기 때문
