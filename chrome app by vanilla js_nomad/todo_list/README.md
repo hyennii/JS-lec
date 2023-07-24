@@ -167,3 +167,21 @@ if (savedToDos !== null) {
     const toDos = [];
 ```
     : application이 시작될때 toDos array는 항상 비어있기 때문
+
+2) 해결
+
+    1. const -> let 변경하여 업데이트 가능하도록 설정
+
+    2. localStorage에 toDo들이 있으면 toDos에 parsedToDos를 넣어서 전에 있던 toDo 들을 복원
+       
+    3. 결론적으로, array가 공백으로 비어있어도 이전의 toDo들을 복원하기 때문에 새 item이 생겨도 기존 item에 추가됨
+  
+```javaScript
+let toDos = [];
+
+if (savedToDos !== null) {
+  const parsedToDos = JSON.parse(savedToDos);
+  toDos = parsedToDos;  //이전에 있던 toDo 복원
+  parsedToDos.forEach(paintToDo);
+}
+``` 
