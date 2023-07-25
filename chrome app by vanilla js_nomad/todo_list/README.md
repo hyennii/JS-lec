@@ -185,3 +185,34 @@ if (savedToDos !== null) {
   parsedToDos.forEach(paintToDo);
 }
 ``` 
+
+---------------------------------------------------------
+
+*<h4> todo 목록을 삭제하고 새로고침하면 다시 생성되어있음 </h4>*
+*<h4>이를 해결하려면?</h4>*
+
+1) 이유
+   : 화면에서는 지워졌지만 localStorage에서는 지우지 않았기 때문
+
+2) 해결
+
+   1. todo들에게 ID 부여 <- 어떤 item을 삭제할지 정확히 하기 위해
+
+      1. todo들을 object로 변경하여 저장시키기
+     
+         ```javaScript
+            const newTodoObj = { 
+                text:newTodo,
+                id:Date.now()    //밀리초를 주는 함수(랜덤한 id값을 얻기 위해 사용)
+              }
+             toDos.push(newTodoObj);    //toDos 배열에 newTodoObj 추가
+             paintToDo(newTodoObj);    //paintToDo에 text 말고 object인 newTodoObj 호출
+         ```
+
+         * todo 목록에 [object Object] 출력되므로, paintToDo 변경필요
+          : paintToDo는 이제 object 받음. object는 text와 id를 가지고 있으므로, span.innerText = newTodo.text 되어야함
+
+    2. li.id = newTodo.id 추가
+  
+    3. 사용자가 x를 누른 버튼의 id 얻어야 함
+
