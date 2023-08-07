@@ -215,4 +215,8 @@ if (savedToDos !== null) {
     2. li.id = newTodo.id 추가
   
     3. 사용자가 x를 누른 버튼의 id 얻어야 함
+       
+    4. array에서 item을 지우는 법
+  
+       - array에서 뭔가를 삭제할때 실제로 array에서 그걸 지우는게 아니라, 삭제할 item을 제외하고 새로운 array 생성하는 것 -> filter 함수 사용하면 됨
 
