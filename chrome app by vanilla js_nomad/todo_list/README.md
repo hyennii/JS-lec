@@ -221,13 +221,16 @@ if (savedToDos !== null) {
        - array에서 뭔가를 삭제할때 실제로 array에서 그걸 지우는게 아니라, 삭제할 item을 제외하고 새로운 array 생성하는 것 -> filter 함수 사용하면 됨
        - <strong>filter 함수</strong>
          ```javaScript
-            function onefilter(){    
+            function oneFilter(){    
              }
          
-             [1, 2, 3, 4].filter(onefilter)    //filter는 onefilter에 1,2,3,4를 넣어서 부름
+             [1, 2, 3, 4].filter(oneFilter)    //filter는 onefilter에 1,2,3,4를 넣어서 부름
          
              onefilter(4);    //js가 onefilter를 4번 부르는 것(매번 숫자는 달라짐)
          ```
          - filter는 forEach와 비슷함
-         - onefilter가 true일 때 
+         - 새 array에서도 위 1,2,3,4를 포함하고 싶으면 onefilter는 반드시 true를 리턴해야 함(만약 false를 리턴하면 새 array에 포함되지 않음)
+         - function oneFilter(){return true}, [1, 2, 3, 4, 5].filter(oneFilter) 하면 무조건 true 리턴
+         - function oneFilter(){return false}, [1, 2, 3, 4, 5].filter(oneFilter) 하면 [] (비어있는 array)
+         - 3번 지우기 : item이 3이 아니면 true 리턴. function oneFilter(item){return item !== 3}
 
