@@ -248,3 +248,21 @@ if (savedToDos !== null) {
             toDos = toDos.filter((toDo) => toDo.id !== parseInt(li.id));
        ```
        - toDo의 id는 number타입이고 li의 id는 string이기 때문에 parseInt를 이용해 문자열을 숫자로 변경해줌(둘 타입이 서로 달라 삭제되지 않음)
+
+---------------------------------------------------------
+
+*<h4> todo 목록에 undefined 노출 및 삭제 안될때 </h4>*
+
+```javaScript
+    toDos = toDos.filter(todo => todo !== undefined && todo !== null);
+```
+- 배열에서 빈 요소 제거
+
+```javaScript
+    function paintToDo(newTodo) {
+      if (newTodo.text) {
+        // ... 이하 코드 유지
+      }
+    }
+```
+- paintToDo 함수 내에서 newTodoObj의 text 속성 유효한 값인지 확인
