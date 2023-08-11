@@ -233,4 +233,18 @@ if (savedToDos !== null) {
          - function oneFilter(){return true}, [1, 2, 3, 4, 5].filter(oneFilter) 하면 무조건 true 리턴
          - function oneFilter(){return false}, [1, 2, 3, 4, 5].filter(oneFilter) 하면 [] (비어있는 array)
          - 3번 지우기 : item이 3이 아니면 true 리턴. function oneFilter(item){return item !== 3}
-
+         - 응용
+            ```javaScript
+                const arr = [1234, 5454, 223, 122, 45, 6775, 334]
+                function twoFilter(num){return num <= 1000}    //1000보다 큰 수들은 지우기
+                arr.filter(twoFilter)
+            ```
+        
+    5. toDo의 id가 li의 id와 다른걸 남기기
+       ```javaScript
+            toDos = toDos.filter((toDo) => toDo.id !== li.id);    //클릭한 li.id와 다른 toDo는 남겨두기
+       ```
+       ```javaScript
+            toDos = toDos.filter((toDo) => toDo.id !== parseInt(li.id));
+       ```
+       - toDo의 id는 number타입이고 li의 id는 string이기 때문에 parseInt를 이용해 문자열을 숫자로 변경해줌(둘 타입이 서로 달라 삭제되지 않음)
