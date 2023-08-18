@@ -55,7 +55,17 @@ console.log(url);    //url 출력
 const lat = position.coords.latitude;
 const lon = position.coords.longitude;
 const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`
-fetch(url);
+fetch(url)
+      .then((response) => response.json())    //response.json : network에 나오는 정보
+      .then((data) => {
+        const weather = document.querySelector("#weather span:first-child");
+        const city = document.querySelector("#weather span:last-child");
+        city.innerText = data.name;
+        weather.innerText = `${data.weather[0].main} / ${data.main.temp}`;
+      });
 ```
 
 network 새로고침하면 js가 fetch를 사용하여 url로 요청한 것 볼 수 있음
+
+- fetch는 promise임. promise는 당장 일어나지 않고 시간이 조금 걸린 뒤 일어나는 것(서버의 응답을 기다려야 하기 때문에 then 사용)
+
