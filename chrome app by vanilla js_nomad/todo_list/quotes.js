@@ -1,51 +1,34 @@
 const quotes = [
-    {
-      quote: "The way to get started is to quit talking and begin doing.",
-      author: "Walt Disney",
-    },
-    {
-      quote: "Life is what happens when you're busy making other plans.",
-      author: "John Lennon",
-    },
-    {
-      quote:
-        "The world is a book and those who do not travel read only one page.",
-      author: "Saint Augustine",
-    },
-    {
-      quote: "Life is either a daring adventure or nothing at all.",
-      author: "Helen Keller",
-    },
-    {
-      quote: "To Travel is to Live",
-      author: "Hans Christian Andersen",
-    },
-    {
-      quote: "Only a life lived for others is a life worthwhile.",
-      author: "Albert Einstein",
-    },
-    {
-      quote: "You only live once, but if you do it right, once is enough.",
-      author: "Mae West",
-    },
-    {
-      quote: "Never go on trips with anyone you do ntot love.",
-      author: "Hemmingway",
-    },
-    {
-      quote: "We wander for distraction, but we travel for fulfilment.",
-      author: "Hilaire Belloc",
-    },
-    {
-      quote: "Travel expands the mind and fills the gap.",
-      author: "Sheda Savage",
-    },
-  ];
+  {
+    quote: "쿼카는 귀엽다",
+    author: "다이노탱",
+  },
+  {
+    quote: "늦었다고 생각했을 땐 진짜 늦은거다",
+    author: "나",
+  },
+  {
+    quote: "재택 최고",
+    author: "나",
+  },
+  {
+    quote: "뽑기 하려고 돈 버는거다",
+    author: "나",
+  },
+  {
+    quote: "합리화 금지",
+    author: "나",
+  },
+  {
+    quote: "고생 끝에 별거 없다",
+    author: "나",
+  },
+];
 
-  const quote = document.querySelector("#quote span:first-child")
-  const author = document.querySelector("#quote span:last-child")
+const quote = document.querySelector("#quote span:first-child");
+const author = document.querySelector("#quote span:last-child");
 
-  const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)];    //Array.length를 사용해 길이 반환
+const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)]; //Array.length를 사용해 길이 반환
 
-  quote.innerText = todaysQuote.quote;
-  author.innerText = todaysQuote.author;
+quote.innerText = todaysQuote.quote;
+author.innerText = todaysQuote.author;
