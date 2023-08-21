@@ -8,3 +8,5 @@
   - [`노마드 - 바닐라JS로 그림 앱 만들기`](https://nomadcoders.co/javascript-for-beginners-2/lobby)
   
   - [`노마드 - 바닐라JS로 크롬 앱 만들기`](https://nomadcoders.co/javascript-for-beginners/lobby)
+
+  - [`노마드 - ReactJS로 영화 웹 서비스 만들기`](https://nomadcoders.co/react-for-beginners/lobby?utm_source=free_course&utm_campaign=react-for-beginners&utm_medium=site)
